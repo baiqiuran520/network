@@ -1,0 +1,9 @@
+{
+  "_comment": "示例格式（占位符）。host 换成你的 GNS3 服务器 IP；devices 的端口与设备名以 connect.py scan 或 topo_build.py 输出为准，勿照抄本示例。",
+  "host": "<GNS3服务器IP>",
+  "devices": {
+    "<设备名1>":  { "port": "<端口>", "type": "vpcs" },
+    "<设备名2>":  { "port": "<端口>", "type": "switch" },
+    "<设备名3>":  { "port": "<端口>", "type": "router" }
+  }
+}
