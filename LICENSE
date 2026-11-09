@@ -1,0 +1,83 @@
+锐捷数据通信实验 Skill 许可协议
+Ruijie Datacom Lab Skill License
+==============================================
+
+版权所有 (c) 2026 白虬髯 (Bai Qiuran)
+Copyright (c) 2026 白虬髯 (Bai Qiuran)
+
+本作品（以下简称「本作品」，包含 SKILL.md、README.md、references/ 下全部文档、
+scripts/ 下全部脚本、以及 LICENSE 文件）采用「署名-非商业性使用」许可发布。
+
+一、授权范围（你可以）
+
+1. 免费下载、复制、使用本作品，用于学习、教学、个人实验、内部实训等**非商业**用途。
+2. 在本作品基础上进行二次创作（修改、改编、增补、翻译等），
+   但必须遵守本协议第二条的全部约束。
+
+二、限制与义务（你必须）
+
+1. **禁止商用**：未经原作者书面授权，不得将本作品（或其二创衍生作品）用于任何
+   商业目的，包括但不限于：直接或间接出售、出租、付费分发、商业培训授课、
+   捆绑进收费产品或服务、以及任何以营利为目的的传播与使用。
+
+2. **二创必须署名**：任何对本作品的二次创作、衍生作品、再分发（包括部分摘录、
+   翻译、改编），都**必须**在显著位置保留并标明原作者信息：
+   - 作者：白虬髯 (Bai Qiuran)
+   - 原作品名称：锐捷数据通信实验 Skill（ruijie-datacom-lab）
+   - 本许可协议（LICENSE）的链接或全文
+
+3. 衍生作品必须继续沿用本协议（署名-非商业性使用），不得以更宽松的方式
+   去除上述约束后再分发。
+
+三、免责声明
+
+本作品按「现状」提供，原作者不对其正确性、完整性、适用性作任何明示或暗示的担保。
+因使用本作品（包括其中脚本对网络设备的任何操作）造成的直接或间接损失，
+原作者不承担任何责任。对真实生产网络设备执行配置前，请务必自行评估风险并做好备份。
+
+四、其他
+
+- 若你希望将本作品用于商业用途，请联系原作者另行授权。
+- 本协议未授予的权利均保留给原作者。
+
+---
+
+## English
+
+This work (the "Work", including SKILL.md, README.md, all documents under references/,
+all scripts under scripts/, and the LICENSE file) is released under an
+**Attribution-NonCommercial** license.
+
+**1. What you may do**
+
+- Download, copy, and use the Work free of charge for **non-commercial** purposes,
+  such as study, teaching, personal labs, and internal training.
+- Create derivative works (modify, adapt, extend, translate), provided you comply
+  with Section 2 below.
+
+**2. Restrictions & obligations**
+
+- **No commercial use**: without the author's written permission, the Work (or any
+  derivative) may not be used for any commercial purpose — selling, renting, paid
+  distribution, commercial training, bundling into paid products/services, or any
+  profit-oriented use.
+- **Attribution required for derivatives**: any derivative work, redistribution, or
+  excerpt must clearly credit the original author in a prominent place:
+  - Author: 白虬髯 (Bai Qiuran)
+  - Original work: Ruijie Datacom Lab Skill (ruijie-datacom-lab)
+  - A link to or the full text of this LICENSE
+- Derivative works must remain under this same license and may not strip the above
+  restrictions for redistribution.
+
+**3. Disclaimer**
+
+The Work is provided "AS IS", without warranty of any kind regarding correctness,
+completeness, or fitness for a particular purpose. The author is not liable for any
+direct or indirect loss arising from use of the Work (including any network-device
+operation performed by its scripts). Before configuring real production devices,
+assess the risk yourself and back up first.
+
+**4. Other**
+
+- For commercial use, contact the author for a separate license.
+- All rights not expressly granted are reserved by the author.
