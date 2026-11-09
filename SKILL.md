@@ -1,6 +1,6 @@
 ---
 name: ruijie-datacom-lab
-description: 通过 telnet 连接 GNS3 / RG-NSE（锐捷 RGOS）模拟器，完成数据通信实验的规划、配置、验证与排障。覆盖 VLAN/Trunk/链路聚合/MSTP/VRRP/OSPF/DHCP 中继/ACL/NAT/端口安全/BPDU 防护等。当用户要连锐捷模拟器、下发 RGOS 配置、做 show/ping/tracert 验证或排障时使用。
+description: 通过 telnet 连接 GNS3 模拟器（内运行锐捷 RG-NSE 的 RGOS 设备镜像），完成数据通信实验的规划、配置、验证与排障。覆盖 VLAN/Trunk/链路聚合/MSTP/VRRP/OSPF/DHCP 中继/ACL/NAT/端口安全/BPDU 防护等。当用户要连 GNS3 模拟器、下发锐捷 RGOS 配置、做 show/ping/tracert 验证或排障时使用。
 author: 白虬髯
 license: Attribution-NonCommercial (署名-非商业性使用；禁止商用；二创须保留原作者署名，详见 LICENSE)
 version: v1.0
@@ -8,7 +8,7 @@ version: v1.0
 
 # 锐捷数据通信实验 Skill
 
-本 skill 用于驱动「GNS3 + RG-NSE（锐捷 RGOS）模拟器」或同类 RGOS 模拟器中的设备，
+本 skill 用于驱动 **GNS3 模拟器**（内运行锐捷 RG-NSE 的 RGOS 设备镜像，或同类 RGOS 模拟器）中的设备，
 按一套可复用的工作流完成数据通信实验：**连接发现 → 需求冲突检查 → 规划 → 确认改名
 → 基本配置 → 具体配置 → 验证 → 排障 → 总结询问**。
 
@@ -68,7 +68,7 @@ version: v1.0
 
 ## 二、适用场景
 
-- 连接 GNS3 + RG-NSE（锐捷 RGOS V1.06）模拟器，设备以 telnet 端口暴露
+- 连接 **GNS3 模拟器**（内运行锐捷 RG-NSE 的 RGOS V1.06 设备镜像），设备以 telnet 端口暴露
 - 二层/三层交换、路由、可靠性、安全类实验（含上述技术栈）
 - 用 `show` 系列命令核验、用 `ping`/`trace`（VPCS 终端）做连通性与路径验证
 - 实验前的需求评审与冲突检查、实验后的排障复盘
@@ -110,7 +110,7 @@ version: v1.0
 > 若拓扑尚未搭建：走上方「完全托管模式」第 1–5 步（用户给拓扑图片 + GNS3 API 地址），
 > 用 `scripts/topo_build.py` 自动建项目/节点/链路/启动并输出端口映射，直接跳到本阶段第 3 步。
 
-1. **主动询问**用户当前模拟器所在主机的 IP。不要硬编码，每次都问。
+1. **主动询问**用户当前 GNS3 模拟器所在主机的 IP。不要硬编码，每次都问。
 2. 拿到 IP 后，**扫描该主机开放的可 telnet 端口**（用 `scripts/connect.py` 的
    `scan_ports`），常见段如 5000–5020、2000–2100。把"端口 → 设备"映射列出给用户确认。
 3. 逐个 telnet 连上，**唤醒**设备（发回车）、进入特权模式 `enable`，读取 `show version`/
@@ -285,11 +285,11 @@ version: v1.0
 `cp lab_config.example.json lab_config.json` 并按题面修改。
 
 ```bash
-# 0) 询问拿到模拟器 IP 后，扫描开放端口，主动发现设备
-python connect.py scan --host <模拟器IP> --start 5000 --end 5020
+# 0) 询问拿到 GNS3 模拟器主机 IP 后，扫描开放端口，主动发现设备
+python connect.py scan --host <GNS3模拟器IP> --start 5000 --end 5020
 
 # 1) 连单台设备进特权模式执行命令（host/port 来自你的 lab_config.json）
-python connect.py shell --host <模拟器IP> --port <设备端口> --run "show version"
+python connect.py shell --host <GNS3模拟器IP> --port <设备端口> --run "show version"
 
 # 2) 先空跑预览（不连设备、不下发），确认计划无误
 python deploy.py --dry-run

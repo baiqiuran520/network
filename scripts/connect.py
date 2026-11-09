@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""锐捷 RG-NSE 模拟器 telnet 客户端：端口扫描 + 连接 + 唤醒/进特权模式。
+"""GNS3 模拟器（内运行锐捷 RG-NSE 的 RGOS 设备）telnet 客户端：端口扫描 + 连接 + 唤醒/进特权模式。
 
 子命令：
   scan   扫描主机开放的可 telnet 端口，返回 port -> banner(设备类型线索)
@@ -197,7 +197,7 @@ def scan_ports(host, start, end, timeout=0.4):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="锐捷模拟器 telnet 工具")
+    ap = argparse.ArgumentParser(description="GNS3 模拟器（锐捷 RGOS）telnet 工具")
     sub = ap.add_subparsers(dest="cmd")
     sp = sub.add_parser("scan", help="扫描开放端口")
     sp.add_argument("--host", required=True, help="GNS3 服务器 IP（必须显式指定）")

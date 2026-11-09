@@ -44,7 +44,7 @@
 
 ### 📌 这是什么
 
-一个用于驱动 **GNS3 + RG-NSE（锐捷 RGOS）模拟器**（或同类 RGOS 模拟器）完成数据通信实验的技能包（Skill）。
+一个用于驱动 **GNS3 模拟器**（内运行锐捷 RG-NSE 的 RGOS 设备镜像，或同类 RGOS 模拟器）完成数据通信实验的技能包（Skill）。
 
 它把一次完整实验所需的全部能力，沉淀为 **「方法论 + 技术参考 + 可运行脚本」** 三合一，覆盖从
 **连接发现 → 需求冲突检查 → 规划 → 改名 → 配置 → 验证 → 排障 → 总结** 的完整闭环。
@@ -135,8 +135,8 @@ ruijie-datacom-skill/
 ```bash
 cd ruijie-datacom-skill/scripts
 
-# 0) 询问拿到模拟器主机 IP 后，扫描开放端口，发现设备
-python connect.py scan --host <模拟器IP> --start 5000 --end 5020
+# 0) 询问拿到 GNS3 模拟器主机 IP 后，扫描开放端口，发现设备
+python connect.py scan --host <GNS3模拟器IP> --start 5000 --end 5020
 
 # 1) 复制配置模板，按你的实验填写 host / devices / configs
 cp lab_config.example.json lab_config.json
@@ -159,7 +159,7 @@ python verify.py after_acl
 
 | 字段 | 说明 |
 |:---|:---|
-| `host` | 模拟器主机 IP（每次按阶段 0 扫描结果填，不要写死） |
+| `host` | GNS3 模拟器主机 IP（每次按阶段 0 扫描结果填，不要写死） |
 | `devices` | `设备名 -> {port, type}`，`type` 取值 `vpcs` / `switch` / `router` |
 | `configs` | `设备名 -> 命令数组`；带前导空格的字符串表示子上下文 |
 | `acl_stage`（可选） | 策略阶段命令，建议最后下发 |
@@ -177,7 +177,7 @@ python verify.py after_acl
 
 | | 内容 |
 |:---:|:---|
-| ✅ **适用** | 锐捷 RGOS 数据通信基础与可靠性/安全实验、模拟器连接与验证、教学/实训排障、锐捷认证备考 |
+| ✅ **适用** | 锐捷 RGOS 数据通信基础与可靠性/安全实验、GNS3 模拟器连接与验证、教学/实训排障、锐捷认证备考 |
 | ❌ **不适用** | 真实物理设备带外管理（需 SSH/Console 方案）、非锐捷命令集、RCIE/WLAN/安全产品专项（本包不含） |
 
 ---
@@ -186,7 +186,7 @@ python verify.py after_acl
 
 ### 📌 What is this
 
-A skill package that drives **GNS3 + RG-NSE (Ruijie RGOS) simulators** (or similar RGOS simulators)
+A skill package that drives **GNS3 simulators** (running Ruijie RG-NSE RGOS device images, or similar RGOS simulators)
 to complete data-communication labs. It bundles everything a full lab needs — **methodology,
 technical references, and runnable scripts** — covering the complete loop from
 **connection discovery → requirement-conflict check → planning → renaming → configuration →
@@ -279,8 +279,8 @@ Place the whole `ruijie-datacom-skill/` directory into one of the skill director
 ```bash
 cd ruijie-datacom-skill/scripts
 
-# 0) After getting the simulator host IP, scan open ports to discover devices
-python connect.py scan --host <SIMULATOR-IP> --start 5000 --end 5020
+# 0) After getting the GNS3 simulator host IP, scan open ports to discover devices
+python connect.py scan --host <GNS3-SIMULATOR-IP> --start 5000 --end 5020
 
 # 1) Copy the config template and fill in host / devices / configs
 cp lab_config.example.json lab_config.json
@@ -303,7 +303,7 @@ All lab parameters live in `scripts/lab_config.json`; scripts never hardcode any
 
 | Field | Description |
 |:---|:---|
-| `host` | simulator host IP (fill from the stage-0 scan each time, don't hardcode) |
+| `host` | GNS3 simulator host IP (fill from the stage-0 scan each time, don't hardcode) |
 | `devices` | `device-name -> {port, type}`; `type` is `vpcs` / `switch` / `router` |
 | `configs` | `device-name -> command list`; leading-space strings denote sub-context |
 | `acl_stage` (optional) | policy-stage commands, recommended to push last |
