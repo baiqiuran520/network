@@ -2,9 +2,14 @@
 
 > **Version**: v1.0（第一版 / First Release）　·　**Author / 作者**: 白虬髯 (Bai Qiuran)
 
+<p align="center">
+  <a href="#-中文"><img src="https://img.shields.io/badge/语言-中文-red?style=for-the-badge" alt="中文"></a>
+  <a href="#-english"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="English"></a>
+</p>
+
 ---
 
-## 中文
+## <a id="-中文"></a>中文
 
 ### 这是什么
 
@@ -129,7 +134,7 @@ python verify.py after_acl
 
 ---
 
-## English
+## <a id="-english"></a>English
 
 ### What is this
 
