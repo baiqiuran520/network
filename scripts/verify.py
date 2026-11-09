@@ -16,6 +16,10 @@
      - router:  show ip interface brief, show ip route, show running-config
 
 依赖: 同目录 connect.py（仅 python 标准库）
+
+作者 / Author: 白虬髯 (Bai Qiuran)
+许可 / License: Attribution-NonCommercial (署名-非商业性使用；禁止商用；二创须保留原作者署名，详见 LICENSE)
+版本 / Version: v1.0
 """
 import os
 import re

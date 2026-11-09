@@ -13,6 +13,10 @@
   python fetch_courseware.py --src "D:/锐捷课件" --out knowledge_base --slidep "C:/path/slidep"
 
 依赖：python 标准库 + 外部 slidep（非标准库，仅本脚本需要）。
+
+作者 / Author: 白虬髯 (Bai Qiuran)
+许可 / License: Attribution-NonCommercial (署名-非商业性使用；禁止商用；二创须保留原作者署名，详见 LICENSE)
+版本 / Version: v1.0
 """
 import os
 import sys

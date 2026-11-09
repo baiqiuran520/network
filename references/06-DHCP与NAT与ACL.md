@@ -1,4 +1,6 @@
 # 06　DHCP 与 NAT 与 ACL
+> **作者 / Author**：白虬髯 (Bai Qiuran)　·　**许可 / License**：署名-非商业性使用（禁止商用，二创须保留原作者署名，详见 LICENSE）　·　**版本 / Version**：v1.0
+
 
 ## 6.1 DHCP 服务器（由边界/核心设备承担）
 ```

@@ -1,4 +1,6 @@
 # 知识来源说明（knowledge_index）
+> **作者 / Author**：白虬髯 (Bai Qiuran)　·　**许可 / License**：署名-非商业性使用（禁止商用，二创须保留原作者署名，详见 LICENSE）　·　**版本 / Version**：v1.0
+
 
 本 skill 已**蒸馏内置**锐捷数据通信的核心知识，用户无需准备任何外部文件，导入即用。
 

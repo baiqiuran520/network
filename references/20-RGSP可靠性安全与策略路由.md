@@ -1,4 +1,6 @@
 # 20　RGSP 可靠性、安全与策略路由（BFD / RLDP / VSU / PBR / AAA）
+> **作者 / Author**：白虬髯 (Bai Qiuran)　·　**许可 / License**：署名-非商业性使用（禁止商用，二创须保留原作者署名，详见 LICENSE）　·　**版本 / Version**：v1.0
+
 
 > 覆盖 RGSP 缺失项：**BFD、RLDP 环路检测、策略路由 PBR、AAA/网络安全**，并**深化 VSU**。
 > 命令以锐捷 RGOS 为准（`show` 非 `display`），拿不准处用 `?` 实测。

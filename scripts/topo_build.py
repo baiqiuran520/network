@@ -33,6 +33,10 @@ topo.json 格式（名称完全自定义，画布设备名与此严格一致）�
   * name 不符 = 项目内有同名残留（GNS3 同项目内重名自动 +1，R2 会变 R3），直接报错停止；
   * symbol 不符 = 图标掉成默认 computer.svg（symbol 是节点级字段、不在 properties 里），
     自动用 PUT 补上模板图标（PUT symbol 可靠；PUT name 不可靠，见 references/17）。
+
+作者 / Author: 白虬髯 (Bai Qiuran)
+许可 / License: Attribution-NonCommercial (署名-非商业性使用；禁止商用；二创须保留原作者署名，详见 LICENSE)
+版本 / Version: v1.0
 """
 import argparse, json, time, urllib.request, urllib.error
 

@@ -1,4 +1,6 @@
 # 21　BGP 高级、IS-IS、MPLS 与 IPv6（RGSE 深化）
+> **作者 / Author**：白虬髯 (Bai Qiuran)　·　**许可 / License**：署名-非商业性使用（禁止商用，二创须保留原作者署名，详见 LICENSE）　·　**版本 / Version**：v1.0
+
 
 > 把 RGSE 的 BGP 高级、IS-IS、MPLS/MPLS VPN、IPv6 从"概述级"深化到**可落地配置**。
 > 命令以锐捷 RGOS 为准（`show` 非 `display`），拿不准处用 `?` 实测。

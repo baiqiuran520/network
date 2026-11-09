@@ -1,4 +1,6 @@
 # 19　无线 WLAN 与广域网基础
+> **作者 / Author**：白虬髯 (Bai Qiuran)　·　**许可 / License**：署名-非商业性使用（禁止商用，二创须保留原作者署名，详见 LICENSE）　·　**版本 / Version**：v1.0
+
 
 > 覆盖 RGSA「无线基础、胖瘦 AP 组网、广域网基础」+ RGSP「WLAN 技术、无线典型组网与网优」。
 > 命令以锐捷 RGOS 语法为准（`show` 非 `display`），拿不准处用 `?` 实测补正。

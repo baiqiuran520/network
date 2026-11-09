@@ -6,6 +6,10 @@
   shell  连上单台设备，进入特权模式，执行若干命令并打印
 
 依赖：仅标准库（socket / re / time / argparse）。
+
+作者 / Author: 白虬髯 (Bai Qiuran)
+许可 / License: Attribution-NonCommercial (署名-非商业性使用；禁止商用；二创须保留原作者署名，详见 LICENSE)
+版本 / Version: v1.0
 """
 import socket
 import time

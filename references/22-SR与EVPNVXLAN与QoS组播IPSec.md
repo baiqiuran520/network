@@ -1,4 +1,6 @@
 # 22　SR、EVPN VXLAN、QoS、组播、IPSec 与规划设计（RGSE 深化）
+> **作者 / Author**：白虬髯 (Bai Qiuran)　·　**许可 / License**：署名-非商业性使用（禁止商用，二创须保留原作者署名，详见 LICENSE）　·　**版本 / Version**：v1.0
+
 
 > 补齐 RGSE 缺失项：**SR、EVPN VXLAN**，并深化 **QoS、组播、IPSec、规划设计方法论**。
 > 命令以锐捷 RGOS 为准（`show` 非 `display`），拿不准处用 `?` 实测。

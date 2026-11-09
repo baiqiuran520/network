@@ -1,4 +1,7 @@
 {
+  "_author": "白虬髯 (Bai Qiuran)",
+  "_license": "Attribution-NonCommercial（署名-非商业性使用；禁止商用；二创须保留原作者署名，详见 LICENSE）",
+  "_version": "v1.0",
   "_comment": "示例格式（占位符）。host 换成你的 GNS3 服务器 IP；devices 的端口与设备名以 connect.py scan 或 topo_build.py 输出为准，勿照抄本示例。",
   "host": "<GNS3服务器IP>",
   "devices": {

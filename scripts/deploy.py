@@ -19,6 +19,10 @@ lab_config.example.json 改名后修改）。脚本本身不再写死任何实�
   - --dry-run 完全不连接设备，只展示将要做什么
 
 依赖: 同目录 connect.py（仅 python 标准库）
+
+作者 / Author: 白虬髯 (Bai Qiuran)
+许可 / License: Attribution-NonCommercial (署名-非商业性使用；禁止商用；二创须保留原作者署名，详见 LICENSE)
+版本 / Version: v1.0
 """
 import os
 import re

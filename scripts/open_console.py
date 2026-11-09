@@ -16,6 +16,10 @@
   python open_console.py open --host <IP> --map "<设备名>=<端口>,<设备名>=<端口>"  # 不读配置文件直接给映射
 
 注意：仅 Windows（winreg 检测）；其他平台退化为提示用户自行用 telnet 连接。
+
+作者 / Author: 白虬髯 (Bai Qiuran)
+许可 / License: Attribution-NonCommercial (署名-非商业性使用；禁止商用；二创须保留原作者署名，详见 LICENSE)
+版本 / Version: v1.0
 """
 import argparse
 import json
